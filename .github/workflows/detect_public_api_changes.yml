@@ -59,7 +59,7 @@ jobs:
     - name: 🔍 Detect Changes
       uses: Adyen/adyen-swift-public-api-diff@use-correct-pwd
       with:
-        platform: "iOS"
+        platform: "macOS"
         new: ${{ env.NEW_VERSION }}
         old: ${{ env.OLD_VERSION }}
 
