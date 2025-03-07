@@ -8,22 +8,22 @@
 // Convenience static properties for common HTML boolean attributes.
 extension Attribute {
     /// A boolean attribute indicating that a form control is disabled.
-    static let disabled: Attribute = .init("disabled")
+    static let disabled: Attribute = "disabled"
 
     /// A boolean attribute indicating that a form control requires a value.
-    static let required: Attribute = .init("required")
+    static let required: Attribute = "required"
 
     /// A boolean attribute indicating that a form control's value cannot be modified.
-    static let readOnly: Attribute = .init("readonly")
+    static let readOnly: Attribute = "readonly"
 
     /// A boolean attribute indicating that a form control is checked.
-    static let checked: Attribute = .init("checked")
+    static let checked: Attribute = "checked"
 
     /// A boolean attribute indicating that an option is selected.
-    static let selected: Attribute = .init("selected")
+    static let selected: Attribute = "selected"
 
     /// A boolean attribute indicating whether audio/video controls should be displayed.
-    static let controls: Attribute = .init("controls")
+    static let controls: Attribute = "controls"
 }
 
 // Convenience static methods for common HTML enumerated attributes.

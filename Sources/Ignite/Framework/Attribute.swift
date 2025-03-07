@@ -6,7 +6,9 @@
 //
 
 /// A simple key-value pair of strings that is able to store custom attributes.
-struct Attribute: Hashable, Equatable, Sendable, Comparable, CustomStringConvertible {
+struct Attribute: Hashable, Equatable, Sendable, Comparable, CustomStringConvertible, ExpressibleByStringLiteral, ExpressibleByStringInterpolation {
+    typealias StringLiteralType = String
+    
     /// The attribute's name, e.g. "target" or "rel".
     var name: String
 
@@ -21,6 +23,10 @@ struct Attribute: Hashable, Equatable, Sendable, Comparable, CustomStringConvert
     init(_ name: String) {
         self.name = name
         self.value = nil
+    }
+
+    init(stringLiteral value: String) {
+        self.init(value)
     }
 
     public var description: String {
